@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './App.module.scss'
-import loozak from './assets/l00zak.jpg'
-import expand_icon from './assets/expand_icon.svg'
 import NavBar from './components/NavBar/Navbar';
 import Header from './components/Header/Header';
-import { Projects } from './sections/Projects/Projects';
+import { About } from './sections/About/About';
+import { Contact } from './sections/Contact/Contact'
+import { Projects } from './sections/Projects/Projects'
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
       <Header />
       <main>
         <Projects />
-        <section className={styles.about}></section>
-        <section className={styles.contact}></section>
+        <About />
+        <Contact />
       </main>
     </div>
   );
