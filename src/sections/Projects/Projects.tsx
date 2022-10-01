@@ -12,7 +12,7 @@ export const Projects = () => {
                 />
                 <ProjectSection
                     title='Weather Forecast'
-                    description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequatur dolorum veniam totam magni minus reiciendis? Temporibus nisi provident necessitatibus. Voluptatem dolorem nobis consectetur debitis nemo laudantium id impedit reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt voluptatum at consequuntur saepe doloremque nostrum nam voluptates blanditiis tempora, rerum doloribus aspernatur alias velit omnis, sunt beatae maxime necessitatibus.'
+                    description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequatur dolorum veniam totam magni minus reiciendis? Temporibus nisi provident necessitatibus. Voluptatem dolorem nobis consectetur debitis nemo laudantium id impedit reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt voluptatum at consequuntur saepe doloremque nostrum nam voluptates blanditiis tempora, rerum doloribus aspernatur alias velit omnis, sunt beatae maxime necessitatibus.'
                 />
                 <ProjectSection
                     title='Pizzeria Site'

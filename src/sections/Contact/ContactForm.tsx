@@ -34,10 +34,9 @@ export const ContactForm = () => {
                     />
                 </label>
                 <button type="submit" disabled={state.submitting}>
-                    Submit
+                    {state.succeeded ? 'Email sent!' : 'Submit'}
                 </button>
             </form>
-            {state.succeeded && <p>Email sent!</p>}
         </>
     );
 }

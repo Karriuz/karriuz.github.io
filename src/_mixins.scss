@@ -4,8 +4,32 @@
   }
 }
 
+@mixin mdScreen {
+  @media (min-width: #{680px}) {
+    @content;
+  }
+}
+
+@mixin lgScreen {
+  @media (min-width: #{860px}) {
+    @content;
+  }
+}
+
 @mixin xlScreen {
   @media (min-width: #{1024px}) {
+    @content;
+  }
+}
+
+@mixin xxlScreen {
+  @media (min-width: #{1160px}) {
+    @content;
+  }
+}
+
+@mixin xxxlScreen {
+  @media (min-width: #{1450px}) {
     @content;
   }
 }
