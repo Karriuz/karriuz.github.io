@@ -1,12 +1,13 @@
+import Slideshow from '../Slideshow/Slideshow';
 import styles from './ProjectSection.module.scss'
 
 interface ProjectSectionProps {
     title: string
     description: string
-
+    slidesSrcArray: string[]
 }
 
-const ProjectSection = ({ title, description }: ProjectSectionProps) => {
+const ProjectSection = ({ title, description, slidesSrcArray }: ProjectSectionProps) => {
     return (
         <section className={styles.projectSection}>
             <div className={styles.description}>
@@ -15,7 +16,7 @@ const ProjectSection = ({ title, description }: ProjectSectionProps) => {
                     {description}
                 </p>
             </div>
-            <div className={styles.imgCarousel} />
+            <Slideshow slidesSrcArray={slidesSrcArray} />
         </section>
     );
 }

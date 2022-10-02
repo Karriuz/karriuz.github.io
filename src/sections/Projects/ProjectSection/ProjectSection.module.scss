@@ -1,4 +1,5 @@
 @import '../../../mixins';
+@import '../../../variables';
 
 .projectSection {
   display: flex;
@@ -48,9 +49,13 @@
     }
   }
 
-  .imgCarousel {
-    background-color: gray;
+  .slideShowWrapper {
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 2px rgb(0 0 0 / 25%);
     aspect-ratio: 3/2;
+    width: 100%;
 
     @include xxlScreen {
       min-width: 630px;
@@ -64,6 +69,66 @@
       min-width: 900px;
       height: 600px;
       max-height: 600px;
+    }
+  }
+
+  .imgCarousel {
+    width: 100%;
+    aspect-ratio: 3/2;
+    border-radius: 1rem;
+  }
+
+  .transitionFadeOut {
+    opacity: 0;
+    animation: fadeOut 8s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    animation-delay: 4s;
+  }
+
+  .transitionCutOut {
+    opacity: 0;
+    animation: cutOut 8s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes cutOut {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 }
