@@ -6,6 +6,7 @@ export const ContactForm = () => {
     return (
         <>
             <form onSubmit={handleSubmit}>
+                <span>Send me a message!</span>
                 <label>
                     Your Email:
                     <input
@@ -25,6 +26,7 @@ export const ContactForm = () => {
                     <textarea
                         id="message"
                         name="message"
+                        rows={3}
                         required
                     />
                     <ValidationError

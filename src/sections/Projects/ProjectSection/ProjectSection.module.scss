@@ -1,3 +1,4 @@
+@use '../../../placeholders';
 @import '../../../mixins';
 @import '../../../variables';
 
@@ -56,6 +57,7 @@
     box-shadow: 0 0 10px 2px rgb(0 0 0 / 25%);
     aspect-ratio: 3/2;
     width: 100%;
+    transition: all 300ms ease-out;
 
     @include xxlScreen {
       min-width: 630px;
@@ -70,29 +72,61 @@
       height: 600px;
       max-height: 600px;
     }
+
+    .imgCarousel {
+      min-height: 100%;
+      width: 100%;
+      border-radius: 1rem;
+    }
+
+    .slideInfo {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      bottom: 0;
+      border-radius: 1rem;
+      transition: 400ms all ease-out;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      z-index: 3000;
+
+      a {
+        @extend %link;
+        font-size: 1.5rem;
+        text-shadow: 0 0 4px black;
+      }
+    }
   }
 
-  .imgCarousel {
-    width: 100%;
-    aspect-ratio: 3/2;
-    border-radius: 1rem;
+  .slideShowWrapper:hover {
+    .slideInfo {
+      opacity: 1;
+      backdrop-filter: blur(2px) brightness(0.35) grayscale(0.5);
+    }
   }
 
   .transitionFadeOut {
     opacity: 0;
-    animation: fadeOut 8s;
+    animation: fadeOut 6s;
     animation-iteration-count: infinite;
+    animation-delay: 3s;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    animation-delay: 4s;
   }
 
   .transitionCutOut {
     opacity: 0;
-    animation: cutOut 8s;
+    animation: cutOut 6s;
     animation-iteration-count: infinite;
   }
 
@@ -101,9 +135,6 @@
       opacity: 0;
     }
     30% {
-      opacity: 1;
-    }
-    50% {
       opacity: 1;
     }
     90% {
@@ -121,14 +152,8 @@
     30% {
       opacity: 1;
     }
-    50% {
+    99% {
       opacity: 1;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
     }
   }
 }

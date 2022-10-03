@@ -13,8 +13,10 @@ function App() {
       <Header />
       <main>
         <Projects />
-        <About />
-        <Contact />
+        <div className={styles.backgroundDark}>
+          <About />
+          <Contact />
+        </div>
       </main>
     </div>
   );

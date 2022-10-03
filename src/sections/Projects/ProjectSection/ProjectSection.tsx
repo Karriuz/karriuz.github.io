@@ -1,13 +1,26 @@
-import Slideshow from '../Slideshow/Slideshow';
+import Slideshow from './Slideshow';
 import styles from './ProjectSection.module.scss'
+import { useState } from 'react'
 
 interface ProjectSectionProps {
     title: string
     description: string
-    slidesSrcArray: string[]
+    githubLink: string
+    demoLink: string
+    slidesSrcArray: {
+        src: string
+        alt: string
+    }[]
 }
 
-const ProjectSection = ({ title, description, slidesSrcArray }: ProjectSectionProps) => {
+const ProjectSection = ({ title, description, slidesSrcArray, demoLink, githubLink }: ProjectSectionProps) => {
+
+    const [docVisible, setDocVisible] = useState(false)
+
+    document.addEventListener('visibilitychange', () => {
+        setDocVisible(document.visibilityState === 'visible' ? true : false)
+    })
+
     return (
         <section className={styles.projectSection}>
             <div className={styles.description}>
@@ -16,7 +29,12 @@ const ProjectSection = ({ title, description, slidesSrcArray }: ProjectSectionPr
                     {description}
                 </p>
             </div>
-            <Slideshow slidesSrcArray={slidesSrcArray} />
+            {(docVisible || !document.hidden)
+                && <Slideshow
+                    slidesSrcArray={slidesSrcArray}
+                    githubLink={githubLink}
+                    demoLink={demoLink}
+                />}
         </section>
     );
 }
