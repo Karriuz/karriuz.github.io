@@ -9,6 +9,7 @@ export const Projects = () => {
                 <h2>My Projects</h2>
                 {projectsData.map((project) =>
                     <ProjectSection
+                        key={project.title}
                         project={project}
                     />)}
             </div>

@@ -13,7 +13,7 @@ export const Contact = () => {
                 <p>Feel free to contact me.<br /> You can write about whatever you want!</p>
                 <div className={styles.linkContainer}>
                     <ContactLink link='https://github.com/Karriuz/' imgSrc={GithubIcon} alt='Github logo' />
-                    <ContactLink link='https://www.linkedin.com/in/maciej-je%C5%BCewski/' imgSrc={LiIcon} alt='LinkedIn Logo' />
+                    <ContactLink link='https://www.linkedin.com/in/maciej-jezewski/' imgSrc={LiIcon} alt='LinkedIn Logo' />
                     <EmailPopup />
                 </div>
             </div>
