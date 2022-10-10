@@ -10,14 +10,8 @@
   }
 }
 
-@mixin lgScreen {
-  @media (min-width: #{860px}) {
-    @content;
-  }
-}
-
 @mixin xlScreen {
-  @media (min-width: #{1024px}) {
+  @media (min-width: #{850px}) {
     @content;
   }
 }

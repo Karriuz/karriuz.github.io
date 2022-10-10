@@ -3,17 +3,20 @@ import styles from './ProjectSection.module.scss'
 import { useState } from 'react'
 
 interface ProjectSectionProps {
-    title: string
-    description: string
-    githubLink: string
-    demoLink: string
-    slidesSrcArray: {
-        src: string
-        alt: string
-    }[]
+    project: {
+        title: string
+        description: string
+        githubLink: string
+        demoLink: string
+        slidesSrcArray: {
+            src: string
+            alt: string
+        }[]
+        techStack: { name: string; backgroundColor: string; color: string; }[]
+    }
 }
 
-const ProjectSection = ({ title, description, slidesSrcArray, demoLink, githubLink }: ProjectSectionProps) => {
+const ProjectSection = ({ project: { title, description, githubLink, demoLink, slidesSrcArray, techStack } }: ProjectSectionProps) => {
 
     const [docVisible, setDocVisible] = useState(false)
 
@@ -28,6 +31,14 @@ const ProjectSection = ({ title, description, slidesSrcArray, demoLink, githubLi
                 <p>
                     {description}
                 </p>
+                <div className={styles.techUsed}>
+                    {techStack.map(({ backgroundColor, color, name }) =>
+                        <div
+                            style={{ backgroundColor: backgroundColor, color: color }}
+                            className={styles.techBadge} >
+                            {name}
+                        </div>)}
+                </div>
             </div>
             {(docVisible || !document.hidden)
                 && <Slideshow

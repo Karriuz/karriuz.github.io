@@ -14,7 +14,7 @@ export const EmailPopup = () => {
                     <img className={`${styles.img} ${styles.openEmailImg}`} src={mail} alt='Email icon' />
                 </button>
             }
-            position="bottom center"
+            position="top center"
             closeOnDocumentClick
             keepTooltipInside="div"
         >

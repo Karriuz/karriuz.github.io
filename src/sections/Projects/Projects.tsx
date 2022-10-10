@@ -7,13 +7,9 @@ export const Projects = () => {
         <section className={styles.projects} id='Projects'>
             <div className={styles.innerContainer}>
                 <h2>My Projects</h2>
-                {projectsData.map(({ title, description, slidesSrcArray, githubLink, demoLink }) =>
+                {projectsData.map((project) =>
                     <ProjectSection
-                        title={title}
-                        description={description}
-                        slidesSrcArray={slidesSrcArray}
-                        githubLink={githubLink}
-                        demoLink={demoLink}
+                        project={project}
                     />)}
             </div>
         </section>

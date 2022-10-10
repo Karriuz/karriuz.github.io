@@ -19,14 +19,18 @@
   .innerContainer {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    max-width: 900px;
     margin: auto;
     gap: 6rem;
   }
 
   @include xxlScreen {
-    .innerContainer :nth-child(2n + 1) {
+    .innerContainer section:nth-child(2n + 1) {
       flex-direction: row-reverse;
+    }
+
+    .innerContainer {
+      max-width: fit-content;
     }
   }
 }

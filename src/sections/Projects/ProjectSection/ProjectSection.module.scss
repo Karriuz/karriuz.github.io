@@ -20,22 +20,46 @@
   }
 
   .description {
+    flex-direction: column;
+    display: flex;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 20%);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
     padding: 1rem;
     border-radius: 2rem;
-    text-align: center;
 
     h3 {
+      text-align: center;
       font-size: 2rem;
       margin: 1rem 0;
     }
 
     p {
-      margin: auto;
+      margin: 1rem auto;
 
       @include xxlScreen {
+        width: 350px;
+      }
+    }
+
+    .techUsed {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: auto;
+
+      .techBadge {
+        padding: 0.25rem;
+        border-radius: 0.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+
+      @include xxlScreen {
+        justify-content: flex-start;
         width: 350px;
       }
     }
@@ -45,7 +69,6 @@
     }
 
     @include xxxlScreen {
-      padding: 2rem;
       border-radius: 1rem;
     }
   }

@@ -24,7 +24,16 @@ export const projectsData = [
     demoLink: 'https://karriuz-taskmanager.netlify.app/',
     title: 'Task Manager',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequatur dolorum veniam totam magni minus reiciendis? Temporibus nisi provident necessitatibus. Voluptatem dolorem nobis consectetur debitis nemo laudantium id impedit reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt voluptatum at consequuntur saepe doloremque nostrum nam voluptates blanditiis tempora, rerum doloribus aspernatur alias velit omnis, sunt beatae maxime necessitatibus.',
+      "Task manager is a complex work management tool and so far my largest and most extensive project. Application uses some popular task tracking solutions (to-do list, semi-kanban board, calendar) and allows user to group and display tasks according to user's preferences so that everyone can customize application depending on their needs. Additionally, app includes a feature to define larger goals and track their progress. I created it with typescript, react, headless ui library (to ensure proper accessibility and keyboard movement on components like dialogs and popups) and used firebase as a backend (auth & database). Feel free to check live demo and readme on github for more info.",
+    techStack: [
+      { name: 'typescript', backgroundColor: '#3178c6', color: 'white' },
+      { name: 'react', backgroundColor: '#282c34', color: '#61dafb' },
+      { name: 'firebase', backgroundColor: '#FF761C', color: '#454545' },
+      { name: 'react router', backgroundColor: 'white', color: 'black' },
+      { name: 'Headless UI', backgroundColor: '#111827', color: 'white' },
+      { name: 'dayjs', backgroundColor: '#BD491F', color: 'white' },
+      { name: 'Sass', color: 'white', backgroundColor: '#bb9097' },
+    ],
   },
   {
     slidesSrcArray: [
@@ -36,7 +45,14 @@ export const projectsData = [
     githubLink: 'https://github.com/Karriuz/weather-forecast-app',
     demoLink: 'https://karriuz-weatherapp.netlify.app/',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequatur dolorum veniam totam magni minus reiciendis? Temporibus nisi provident necessitatibus. Voluptatem dolorem nobis consectetur debitis nemo laudantium id impedit reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt voluptatum at consequuntur saepe doloremque nostrum nam voluptates blanditiis tempora, rerum doloribus aspernatur alias velit omnis, sunt beatae maxime necessitatibus.',
+      'Application for checking weather forecast for the next few days in most locations in Poland. The aim of the project was to learn typescript, Tailwind Css and use of fetch api with react. Free API used in this project: https://openweathermap.org/api',
+    techStack: [
+      { name: 'typescript', backgroundColor: '#3178c6', color: 'white' },
+      { name: 'react', backgroundColor: '#282c34', color: '#61dafb' },
+      { name: 'Tailwind Css', backgroundColor: '#C7E4EA', color: 'black' },
+      { name: 'dayjs', backgroundColor: '#BD491F', color: 'white' },
+      { name: 'fetch api', backgroundColor: 'black', color: 'white' },
+    ],
   },
   {
     slidesSrcArray: [
@@ -48,7 +64,13 @@ export const projectsData = [
     githubLink: 'https://github.com/Karriuz/pizzeria-site-react-mui',
     demoLink: 'https://karriuz-pizzeria.netlify.app',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequatur dolorum veniam totam magni minus reiciendis? Temporibus nisi provident necessitatibus. Voluptatem dolorem nobis consectetur debitis nemo laudantium id impedit reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt voluptatum at consequuntur saepe doloremque nostrum nam voluptates blanditiis tempora, rerum doloribus aspernatur alias velit omnis, sunt beatae maxime necessitatibus.',
+      'One of my first react projects. Sadly you will not find any complicated logic here. Aim of the project was to create a relatively aesthetic site while learning React, React Router and components from Material Ui v5',
+    techStack: [
+      { name: 'Javascript', color: 'black', backgroundColor: '#FFFE27' },
+      { name: 'react', backgroundColor: '#282c34', color: '#61dafb' },
+      { name: 'react router', backgroundColor: 'white', color: 'black' },
+      { name: 'Material Ui v5', color: 'white', backgroundColor: 'royalblue' },
+    ],
   },
   {
     slidesSrcArray: [
@@ -60,6 +82,11 @@ export const projectsData = [
     demoLink: 'https://tetris-karrius.netlify.app',
     title: 'Tetris Game',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequatur dolorum veniam totam magni minus reiciendis? Temporibus nisi provident necessitatibus. Voluptatem dolorem nobis consectetur debitis nemo laudantium id impedit reiciendis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt voluptatum at consequuntur saepe doloremque nostrum nam voluptates blanditiis tempora, rerum doloribus aspernatur alias velit omnis, sunt beatae maxime necessitatibus.',
+      'Tetris is one of my most interesting applications created using plain javascript. Project was created in my early days of learning js so code itself is very ugly and unreadable, but today I would definitely be able to do it in a much better, cleaner and smarter way. Nevertheless, I decided to share with it beacause I think that game itself is very interesting, unique and creating it was a lot of fun! I also made for it really simple express.js backend which connects to the mongoDB database to create a player scoreboard (But to be fair it has zero data validation so really anyone can make a simple post api call with any data)',
+    techStack: [
+      { name: 'Javascript', color: 'black', backgroundColor: '#FFFE27' },
+      { name: 'CSS', color: 'white', backgroundColor: 'royalblue' },
+      { name: 'AnimeJs', color: 'white', backgroundColor: '#252423' },
+    ],
   },
 ]

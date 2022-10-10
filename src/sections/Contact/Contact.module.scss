@@ -9,13 +9,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 3rem;
   color: #e5e5e5;
+
+  @include xxlScreen {
+    gap: 10rem;
+  }
 
   @include xlScreen {
     flex-direction: row;
     align-items: stretch;
-    gap: 10rem;
   }
 
   h2 {
@@ -41,7 +44,7 @@
     background-color: rgba(0, 0, 0, 0.3);
 
     @include smScreen {
-      width: 400px;
+      width: 350px;
     }
 
     span {
@@ -102,7 +105,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 5.5rem auto 0 auto;
+    margin: 3.5rem auto 0 auto;
 
     width: 300px;
 
