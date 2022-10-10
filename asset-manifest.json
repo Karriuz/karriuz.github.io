@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ac502dd2.css",
+    "main.js": "/static/js/main.1c9b0f22.js",
+    "static/media/myImage3.jpg": "/static/media/myImage3.19fd28fc4e7a36e41538.jpg",
+    "static/media/PW-home.webp": "/static/media/PW-home.5f1c53cf50a2a7ddc353.webp",
+    "static/media/TM-Board.webp": "/static/media/TM-Board.86186235ebc26cd7df56.webp",
+    "static/media/TM-List.webp": "/static/media/TM-List.144fbcb892def400927b.webp",
+    "static/media/PW-home2.webp": "/static/media/PW-home2.4acfb4cd8b0cfe485121.webp",
+    "static/media/WF-Day.webp": "/static/media/WF-Day.0dd2815002ba1cbc8c8a.webp",
+    "static/media/TM-MonthCal.webp": "/static/media/TM-MonthCal.f7fe84781078411a2a5f.webp",
+    "static/media/WF-idk.webp": "/static/media/WF-idk.e824314a7a4feb3a80a3.webp",
+    "static/media/WF-week.webp": "/static/media/WF-week.a694a668bf23e8844b07.webp",
+    "static/media/PW-Menu.webp": "/static/media/PW-Menu.7428da0b07c692629097.webp",
+    "static/media/TM-Daycal.webp": "/static/media/TM-Daycal.277f439277fb4a372d63.webp",
+    "static/media/tetris-2.webp": "/static/media/tetris-2.c00fa4b4eff0a9943d05.webp",
+    "static/media/tetris-3.webp": "/static/media/tetris-3.d9b0e1423e9fa78871b0.webp",
+    "static/media/tetris-1.webp": "/static/media/tetris-1.1daa36f00cbe767ee392.webp",
+    "index.html": "/index.html",
+    "static/media/mail.svg": "/static/media/mail.8415c6fb241e6ef6812cc77fc78ad342.svg",
+    "static/media/expand_icon.svg": "/static/media/expand_icon.fa08da894d15df5d37f809f31befa585.svg",
+    "main.ac502dd2.css.map": "/static/css/main.ac502dd2.css.map",
+    "main.1c9b0f22.js.map": "/static/js/main.1c9b0f22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac502dd2.css",
+    "static/js/main.1c9b0f22.js"
+  ]
+}
