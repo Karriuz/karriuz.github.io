@@ -3,23 +3,13 @@
 @import '../../mixins';
 
 .about {
-  padding: 5rem;
-  display: flex;
+  @extend %lowerSection;
   align-items: stretch;
-  justify-content: center;
-  gap: 3rem;
-  color: $bright-1;
-
-  @include xxlScreen {
-    gap: 10rem;
-  }
 
   div {
     display: flex;
     flex-direction: column;
-    h2 {
-      @extend %quicksandHeader;
-    }
+    @extend %lowerSectionLeftColumn;
 
     p {
       box-sizing: border-box;
@@ -27,13 +17,8 @@
       padding: 1rem;
       border-radius: 1rem;
       background-color: rgba(0, 0, 0, 0.3);
-      width: 300px;
       line-height: 1.3rem;
       flex-grow: 1;
-
-      @include smScreen {
-        width: 350px;
-      }
     }
   }
 

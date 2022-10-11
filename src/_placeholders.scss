@@ -36,3 +36,27 @@
   font-size: 2.5rem;
   text-align: center;
 }
+
+%lowerSection {
+  padding: 5rem;
+  display: flex;
+  gap: 3rem;
+  color: $bright-1;
+  justify-content: center;
+
+  @include xxlScreen {
+    gap: 10rem;
+  }
+
+  h2 {
+    @extend %quicksandHeader;
+  }
+}
+
+%lowerSectionLeftColumn {
+  width: 300px;
+
+  @include smScreen {
+    width: 350px;
+  }
+}

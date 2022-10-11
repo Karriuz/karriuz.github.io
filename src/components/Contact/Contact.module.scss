@@ -3,18 +3,10 @@
 @import '../../mixins';
 
 .contact {
-  padding: 5rem;
-  padding-top: 0;
-  display: flex;
+  @extend %lowerSection;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 3rem;
-  color: #e5e5e5;
-
-  @include xxlScreen {
-    gap: 10rem;
-  }
+  padding-top: 0;
 
   @include xlScreen {
     flex-direction: row;
@@ -22,7 +14,6 @@
   }
 
   h2 {
-    @extend %quicksandHeader;
     text-align: center;
     margin-top: 3rem;
   }
@@ -106,12 +97,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 3.5rem auto 0 auto;
-
-    width: 300px;
-
-    @include smScreen {
-      width: 350px;
-    }
+    @extend %lowerSectionLeftColumn;
 
     .contactLink {
       border: none;
