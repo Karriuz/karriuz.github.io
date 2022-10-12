@@ -24,7 +24,7 @@ export const projectsData = [
     demoLink: 'https://karriuz-taskmanager.netlify.app/',
     title: 'Task Manager',
     description:
-      "Task manager is a complex work management tool and so far my largest and most extensive project. Application uses some popular task tracking solutions (to-do list, semi-kanban board, calendar) and allows user to group and display tasks according to user's preferences so that everyone can customize application depending on their needs. Additionally, app includes a feature to define larger goals and track their progress. I created it with typescript, react, headless ui library (to ensure proper accessibility and keyboard movement on components like dialogs and popups) and used firebase as a backend (auth & database). Feel free to check live demo and readme on github for more info.",
+      "Task manager is a complex work management tool and so far my largest and most extensive project. The application uses some popular task tracking solutions (to-do list, semi-kanban board, calendar) and allows user to group and display tasks according to user's preferences so that everyone can customize the application depending on their needs. Additionally, app includes a feature to define larger goals and track their progress. I created it with typescript, react, headless ui library (to ensure proper accessibility and keyboard movement on components like dialogs and popups) and used firebase as a backend (auth & database). Feel free to check live demo and readme on github for more info.",
     techStack: [
       { name: 'typescript', backgroundColor: '#3178c6', color: 'white' },
       { name: 'react', backgroundColor: '#282c34', color: '#61dafb' },
@@ -64,7 +64,7 @@ export const projectsData = [
     githubLink: 'https://github.com/Karriuz/pizzeria-site-react-mui',
     demoLink: 'https://karriuz-pizzeria.netlify.app',
     description:
-      'One of my first react projects. Sadly you will not find any complicated logic here. Aim of the project was to create a relatively aesthetic site while learning React, React Router and components from Material Ui v5',
+      'One of my first react projects. Sadly, you will not find any complicated logic here. The aim of the project was to create a relatively aesthetic site while learning React, React Router and components from Material Ui v5',
     techStack: [
       { name: 'Javascript', color: 'black', backgroundColor: '#FFFE27' },
       { name: 'react', backgroundColor: '#282c34', color: '#61dafb' },
@@ -82,7 +82,7 @@ export const projectsData = [
     demoLink: 'https://tetris-karrius.netlify.app',
     title: 'Tetris Game',
     description:
-      'Tetris is one of my most interesting applications created using plain javascript. Project was created in my early days of learning js so code itself is very ugly and unreadable, but today I would definitely be able to do it in a much better, cleaner and smarter way. Nevertheless, I decided to share with it beacause I think that game itself is very interesting, unique and creating it was a lot of fun! I also made for it really simple express.js backend which connects to the mongoDB database to create a player scoreboard (But to be fair it has zero data validation so really anyone can make a simple post api call with any data)',
+      'Tetris is one of my most interesting applications created using plain javascript. The project was created in my early days of learning js so the code itself is very ugly and unreadable, but today I would definitely be able to do it in a much better, cleaner and smarter way. Nevertheless, I decided to share with it because I think that the game itself is very interesting, unique and creating it was a lot of fun! I also made for it a really simple express.js backend which connects to the mongoDB database to create a player scoreboard (But to be fair it has zero data validation, so really anyone can make a simple post API call with any data)',
     techStack: [
       { name: 'Javascript', color: 'black', backgroundColor: '#FFFE27' },
       { name: 'CSS', color: 'white', backgroundColor: 'royalblue' },
