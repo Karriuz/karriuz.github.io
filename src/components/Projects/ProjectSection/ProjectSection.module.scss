@@ -77,7 +77,9 @@
     box-sizing: border-box;
     position: relative;
     border-radius: 1rem;
+    overflow: hidden;
     box-shadow: 0 0 10px 2px rgb(0 0 0 / 25%);
+    background-color: rgb(80, 80, 80);
     width: 100%;
 
     @include xxlScreen {
@@ -92,12 +94,6 @@
       min-width: 900px;
       height: 600px;
       max-height: 600px;
-    }
-
-    .imgCarousel {
-      min-height: 100%;
-      width: 100%;
-      border-radius: 1rem;
     }
 
     .slideInfo {
@@ -131,48 +127,15 @@
     }
   }
 
-  .transitionFadeOut {
-    filter: opacity(0);
-    animation: fadeOut 6s;
-    animation-iteration-count: infinite;
-    animation-delay: 3s;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-  }
+  .eachSlide {
+    display: flex;
+    width: 100%;
+    height: 100%;
 
-  .transitionCutOut {
-    filter: opacity(0);
-    animation: cutOut 6s;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes fadeOut {
-    0% {
-      filter: opacity(0);
-    }
-    30% {
-      filter: opacity(1);
-    }
-    90% {
-      filter: opacity(1);
-    }
-    100% {
-      filter: opacity(0);
-    }
-  }
-
-  @keyframes cutOut {
-    0% {
-      filter: opacity(0);
-    }
-    30% {
-      filter: opacity(1);
-    }
-    99% {
-      filter: opacity(1);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { Fade } from 'react-slideshow-image';
 import styles from '../ProjectSection/ProjectSection.module.scss'
 
 interface SlideshowProps {
@@ -11,27 +11,6 @@ interface SlideshowProps {
 }
 
 const Slideshow = ({ slidesSrcArray, githubLink, demoLink }: SlideshowProps) => {
-    const [slideIndexOne, setSlideIndexOne] = useState(0)
-    const [slideIndexTwo, setSlideIndexTwo] = useState(0)
-
-    useEffect(() => {
-        updateOne()
-        setTimeout(updateTwo, 3000)
-    }, [])
-
-    const updateOne = () => {
-        setTimeout(() => {
-            setSlideIndexOne(prev => prev + 1 >= slidesSrcArray.length ? 0 : prev + 1)
-            updateOne()
-        }, 6000)
-    }
-
-    const updateTwo = () => {
-        setTimeout(() => {
-            setSlideIndexTwo(prev => prev + 1 >= slidesSrcArray.length ? 0 : prev + 1)
-            updateTwo()
-        }, 6000)
-    }
 
     return (
         <div className={styles.slideShowWrapper}>
@@ -39,16 +18,22 @@ const Slideshow = ({ slidesSrcArray, githubLink, demoLink }: SlideshowProps) => 
                 <a href={githubLink} target='_blank' rel='noreferrer'>Github <hr /></a>
                 <a href={demoLink} target='_blank' rel='noreferrer'>Live demo <hr /></a>
             </div>
-            <img
-                className={`${styles.imgCarousel} ${styles.transitionCutOut}`}
-                src={slidesSrcArray[slideIndexOne].src}
-                alt={slidesSrcArray[slideIndexTwo].alt}
-            />
-            <img
-                className={`${styles.imgCarousel} ${styles.transitionFadeOut}`}
-                src={slidesSrcArray[slideIndexTwo].src}
-                alt={slidesSrcArray[slideIndexTwo].alt}
-            />
+            <Fade
+                arrows={false}
+                duration={4000}
+                transitionDuration={1000}
+                autoplay={true}
+                pauseOnHover={false}
+                easing='cubic'
+            >
+                {slidesSrcArray.map(({ src, alt }) => (
+                    <div className={styles.eachSlide}>
+                        <div>
+                            <img src={src} alt={alt} />
+                        </div>
+                    </div>
+                ))}
+            </Fade>
         </div>
     );
 }
