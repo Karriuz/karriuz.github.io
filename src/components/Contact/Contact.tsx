@@ -12,7 +12,7 @@ export const Contact = () => {
                 <h2>Contact</h2>
                 <p>Feel free to contact me.<br /> You can write about whatever you want!</p>
                 <div className={styles.linkContainer}>
-                    <ContactLink link='https://github.com/Karriuz/' imgSrc={GithubIcon} alt='Github logo' />
+                    <ContactLink link='https://github.com/m-jezewski/' imgSrc={GithubIcon} alt='Github logo' />
                     <ContactLink link='https://www.linkedin.com/in/maciej-jezewski/' imgSrc={LiIcon} alt='LinkedIn Logo' />
                     <EmailPopup />
                 </div>
