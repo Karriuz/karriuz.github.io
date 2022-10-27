@@ -1,5 +1,5 @@
 import styles from './About.module.scss'
-import myImage from '../../assets/myImage3.jpg'
+import myImage from '../../assets/myImage3.webp'
 
 export const About = () => {
     return (

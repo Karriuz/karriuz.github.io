@@ -1,5 +1,6 @@
 import { Fade } from 'react-slideshow-image';
 import styles from '../ProjectSection/ProjectSection.module.scss'
+import SlideInfo from './SlideInfo';
 
 interface SlideshowProps {
     githubLink: string
@@ -10,30 +11,38 @@ interface SlideshowProps {
     }[]
 }
 
-const Slideshow = ({ slidesSrcArray, githubLink, demoLink }: SlideshowProps) => {
+const isFirefox = navigator.userAgent.match(/firefox|fxios/i)
 
+const Slideshow = ({ slidesSrcArray, githubLink, demoLink }: SlideshowProps) => {
     return (
         <div className={styles.slideShowWrapper}>
-            <div className={styles.slideInfo}>
-                <a href={githubLink} target='_blank' rel='noreferrer'>Github <hr /></a>
-                <a href={demoLink} target='_blank' rel='noreferrer'>Live demo <hr /></a>
-            </div>
-            <Fade
-                arrows={false}
-                duration={4000}
-                transitionDuration={1000}
-                autoplay={true}
-                pauseOnHover={false}
-                easing='cubic'
-            >
-                {slidesSrcArray.map(({ src, alt }) => (
-                    <div className={styles.eachSlide}>
-                        <div>
-                            <img src={src} alt={alt} />
+            <SlideInfo
+                githubLink={githubLink}
+                demoLink={demoLink}
+            />
+            {isFirefox ?
+                <div>
+                    <img src={slidesSrcArray[0].src} alt={slidesSrcArray[0].alt} />
+                </div> :
+                <Fade
+                    arrows={false}
+                    duration={4000}
+                    transitionDuration={1000}
+                    autoplay={true}
+                    pauseOnHover={false}
+                    easing='cubic'
+                >
+                    {slidesSrcArray.map(({ src, alt }) => (
+                        <div
+                            className={styles.eachSlide}
+                            key={src}
+                        >
+                            <div>
+                                <img src={src} alt={alt} />
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </Fade>
+                    ))}
+                </Fade>}
         </div>
     );
 }

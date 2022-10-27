@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://karriuz.github.io",
+  "homepage": "https://m-jezewski.github.io",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.4.0",

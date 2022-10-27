@@ -5,10 +5,12 @@ interface NavbarAnchorProps {
     text: string
 }
 
-const NavbarAnchor = ({ to, text }: NavbarAnchorProps) => {
+const isFirefox = navigator.userAgent.match(/firefox|fxios/i)
 
+const NavbarAnchor = ({ to, text }: NavbarAnchorProps) => {
     const aRef = useRef<HTMLAnchorElement>(null!)
     const handleClick = (e: MouseEvent) => {
+        if (isFirefox) return
         e.preventDefault();
         document.querySelector(aRef.current.getAttribute('href')!)?.scrollIntoView({ behavior: "smooth" })
     }

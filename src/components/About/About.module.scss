@@ -4,7 +4,7 @@
 
 .about {
   @extend %lowerSection;
-  align-items: stretch;
+  align-items: center;
 
   div {
     display: flex;
@@ -16,7 +16,7 @@
       margin: 0;
       padding: 1rem;
       border-radius: 1rem;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: $dark-transparent;
       line-height: 1.3rem;
       flex-grow: 1;
     }
@@ -30,7 +30,7 @@
     }
     background-color: rgba(255, 255, 255, 0.1);
 
-    aspect-ratio: 16/28.5;
+    aspect-ratio: 0.56;
     border-radius: 0.5rem;
   }
 }

@@ -20,8 +20,8 @@ export const projectsData = [
       { src: TM_MonthCal, alt: 'Task manager app screenshot with month view calendar' },
       { src: TM_Board, alt: 'Task maanger app screenshot with semi-kanban board' },
     ],
-    githubLink: 'https://github.com/Karriuz/task-maganer',
-    demoLink: 'https://karriuz-taskmanager.netlify.app/',
+    githubLink: 'https://github.com/m-jezewski/task-manager',
+    demoLink: 'https://mjezewski-taskmanager.netlify.app/',
     title: 'Task Manager',
     description:
       "Task manager is a complex work management tool and so far my largest and most extensive project. The application uses some popular task tracking solutions (to-do list, semi-kanban board, calendar) and allows user to group and display tasks according to user's preferences so that everyone can customize the application depending on their needs. Additionally, app includes a feature to define larger goals and track their progress. I created it with typescript, react, headless ui library (to ensure proper accessibility and keyboard movement on components like dialogs and popups) and used firebase as a backend (auth & database). Feel free to check live demo and readme on github for more info.",
@@ -42,8 +42,8 @@ export const projectsData = [
       { src: WF_idk, alt: 'Weather forecast app screenshot' },
     ],
     title: 'Weather Forecast',
-    githubLink: 'https://github.com/Karriuz/weather-forecast-app',
-    demoLink: 'https://karriuz-weatherapp.netlify.app/',
+    githubLink: 'https://github.com/m-jezewski/weather-forecast-app',
+    demoLink: 'https://mjezewski-weatherapp.netlify.app/',
     description:
       'Application for checking weather forecast for the next few days in most locations in Poland. The aim of the project was to learn typescript, Tailwind Css and use of fetch api with react. Free API used in this project: https://openweathermap.org/api',
     techStack: [
@@ -61,10 +61,10 @@ export const projectsData = [
       { src: PW_home2, alt: 'Screenshot of pizzera site about section' },
     ],
     title: 'Pizzeria Site',
-    githubLink: 'https://github.com/Karriuz/pizzeria-site-react-mui',
-    demoLink: 'https://karriuz-pizzeria.netlify.app',
+    githubLink: 'https://github.com/m-jezewski/pizzeria-site-react-mui',
+    demoLink: 'https://mjezewski-pizzeria.netlify.app',
     description:
-      'One of my first react projects. Sadly, you will not find any complicated logic here. The aim of the project was to create a relatively aesthetic site while learning React, React Router and components from Material Ui v5',
+      'Simple pizzeria website. The aim of the project was to create a relatively aesthetic site while learning React, React Router and components from Material Ui v5.',
     techStack: [
       { name: 'Javascript', color: 'black', backgroundColor: '#FFFE27' },
       { name: 'react', backgroundColor: '#282c34', color: '#61dafb' },
@@ -78,11 +78,11 @@ export const projectsData = [
       { src: tetris_2, alt: 'Tetris game image' },
       { src: tetris_3, alt: 'Tetris game image' },
     ],
-    githubLink: 'https://github.com/Karriuz/Tetris',
-    demoLink: 'https://tetris-karrius.netlify.app',
+    githubLink: 'https://github.com/m-jezewski/Tetris',
+    demoLink: 'https://mjezewski-tetris.netlify.app',
     title: 'Tetris Game',
     description:
-      'Tetris is one of my most interesting applications created using plain javascript. The project was created in my early days of learning js so the code itself is very ugly and unreadable, but today I would definitely be able to do it in a much better, cleaner and smarter way. Nevertheless, I decided to share with it because I think that the game itself is very interesting, unique and creating it was a lot of fun! I also made for it a really simple express.js backend which connects to the mongoDB database to create a player scoreboard (But to be fair it has zero data validation, so really anyone can make a simple post API call with any data)',
+      'Tetris is one of my most interesting applications created using plain javascript. The project was created in my early days of learning js so the code itself is very unreadable, but today I would definitely be able to do it in a much better, cleaner and smarter way. Nevertheless, I decided to share it because I think that the game itself is very interesting, unique and creating it was a lot of fun! I also made for it a really simple express.js backend which connects to the mongoDB database to create a player scoreboard',
     techStack: [
       { name: 'Javascript', color: 'black', backgroundColor: '#FFFE27' },
       { name: 'CSS', color: 'white', backgroundColor: 'royalblue' },
