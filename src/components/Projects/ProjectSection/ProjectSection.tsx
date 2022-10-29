@@ -9,6 +9,7 @@ interface ProjectSectionProps {
         demoLink: string
         slidesSrcArray: {
             src: string
+            srcBlur: string
             alt: string
         }[]
         techStack: { name: string; backgroundColor: string; color: string; }[]

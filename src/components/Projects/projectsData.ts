@@ -1,24 +1,37 @@
 import PW_home from '../../assets/PW-home.webp'
+import PW_home_Blur from '../../assets/PW-home-blur.webp'
 import PW_home2 from '../../assets/PW-home2.webp'
+import PW_home2_Blur from '../../assets/PW-home2-blur.webp'
 import PW_Menu from '../../assets/PW-Menu.webp'
+import PW_Menu_Blur from '../../assets/PW-Menu-blur.webp'
 import tetris_1 from '../../assets/tetris-1.webp'
+import tetris_1_Blur from '../../assets/tetris-1-blur.webp'
 import tetris_2 from '../../assets/tetris-2.webp'
+import tetris_2_Blur from '../../assets/tetris-2-blur.webp'
 import tetris_3 from '../../assets/tetris-3.webp'
+import tetris_3_Blur from '../../assets/tetris-3-blur.webp'
 import TM_Board from '../../assets/TM-Board.webp'
+import TM_Board_Blur from '../../assets/TM-Board-blur.webp'
 import TM_Daycal from '../../assets/TM-Daycal.webp'
+import TM_Daycal_Blur from '../../assets/TM-Daycal-blur.webp'
 import TM_List from '../../assets/TM-List.webp'
+import TM_List_Blur from '../../assets/TM-List-blur.webp'
 import TM_MonthCal from '../../assets/TM-MonthCal.webp'
+import TM_MonthCal_Blur from '../../assets/TM-MonthCal-blur.webp'
 import WF_Day from '../../assets/WF-Day.webp'
+import WF_Day_Blur from '../../assets/WF-Day-blur.webp'
 import WF_idk from '../../assets/WF-idk.webp'
+import WF_idk_Blur from '../../assets/WF-idk-blur.webp'
 import WF_week from '../../assets/WF-week.webp'
+import WF_week_Blur from '../../assets/WF-week-blur.webp'
 
 export const projectsData = [
   {
     slidesSrcArray: [
-      { src: TM_Daycal, alt: 'Task manager app screenshot with day view calendar' },
-      { src: TM_List, alt: 'Task manager app screenshot with todo list' },
-      { src: TM_MonthCal, alt: 'Task manager app screenshot with month view calendar' },
-      { src: TM_Board, alt: 'Task maanger app screenshot with semi-kanban board' },
+      { src: TM_Daycal, srcBlur: TM_Daycal_Blur, alt: 'Task manager app screenshot with day view calendar' },
+      { src: TM_List, srcBlur: TM_List_Blur, alt: 'Task manager app screenshot with todo list' },
+      { src: TM_MonthCal, srcBlur: TM_MonthCal_Blur, alt: 'Task manager app screenshot with month view calendar' },
+      { src: TM_Board, srcBlur: TM_Board_Blur, alt: 'Task maanger app screenshot with semi-kanban board' },
     ],
     githubLink: 'https://github.com/m-jezewski/task-manager',
     demoLink: 'https://mjezewski-taskmanager.netlify.app/',
@@ -37,9 +50,9 @@ export const projectsData = [
   },
   {
     slidesSrcArray: [
-      { src: WF_week, alt: 'Weather forecast app screenshot' },
-      { src: WF_Day, alt: 'Weather forecast app screenshot' },
-      { src: WF_idk, alt: 'Weather forecast app screenshot' },
+      { src: WF_week, srcBlur: WF_week_Blur, alt: 'Weather forecast app screenshot' },
+      { src: WF_Day, srcBlur: WF_Day_Blur, alt: 'Weather forecast app screenshot' },
+      { src: WF_idk, srcBlur: WF_idk_Blur, alt: 'Weather forecast app screenshot' },
     ],
     title: 'Weather Forecast',
     githubLink: 'https://github.com/m-jezewski/weather-forecast-app',
@@ -56,9 +69,9 @@ export const projectsData = [
   },
   {
     slidesSrcArray: [
-      { src: PW_home, alt: 'Screenshot of pizzeria site home page' },
-      { src: PW_Menu, alt: 'Screenshort of pizzeria site menu page' },
-      { src: PW_home2, alt: 'Screenshot of pizzera site about section' },
+      { src: PW_home, srcBlur: PW_home_Blur, alt: 'Screenshot of pizzeria site home page' },
+      { src: PW_Menu, srcBlur: PW_Menu_Blur, alt: 'Screenshort of pizzeria site menu page' },
+      { src: PW_home2, srcBlur: PW_home2_Blur, alt: 'Screenshot of pizzera site about section' },
     ],
     title: 'Pizzeria Site',
     githubLink: 'https://github.com/m-jezewski/pizzeria-site-react-mui',
@@ -74,9 +87,9 @@ export const projectsData = [
   },
   {
     slidesSrcArray: [
-      { src: tetris_1, alt: 'Tetris game image' },
-      { src: tetris_2, alt: 'Tetris game image' },
-      { src: tetris_3, alt: 'Tetris game image' },
+      { src: tetris_1, srcBlur: tetris_1_Blur, alt: 'Tetris game image' },
+      { src: tetris_2, srcBlur: tetris_2_Blur, alt: 'Tetris game image' },
+      { src: tetris_3, srcBlur: tetris_3_Blur, alt: 'Tetris game image' },
     ],
     githubLink: 'https://github.com/m-jezewski/Tetris',
     demoLink: 'https://mjezewski-tetris.netlify.app',

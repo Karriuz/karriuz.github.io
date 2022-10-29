@@ -7,6 +7,7 @@ interface SlideshowProps {
     demoLink: string
     slidesSrcArray: {
         src: string
+        srcBlur: string
         alt: string
     }[]
 }
@@ -21,9 +22,10 @@ const Slideshow = ({ slidesSrcArray, githubLink, demoLink }: SlideshowProps) => 
                 demoLink={demoLink}
             />
             {isFirefox ?
-                <div>
-                    <img src={slidesSrcArray[0].src} alt={slidesSrcArray[0].alt} />
-                </div> :
+                <div className={styles.eachSlide}>
+                    <img src={slidesSrcArray[0].srcBlur} alt={slidesSrcArray[0].alt} className={styles.imageNormalVersion} />
+                </div>
+                :
                 <Fade
                     arrows={false}
                     duration={4000}
@@ -32,14 +34,10 @@ const Slideshow = ({ slidesSrcArray, githubLink, demoLink }: SlideshowProps) => 
                     pauseOnHover={false}
                     easing='cubic'
                 >
-                    {slidesSrcArray.map(({ src, alt }) => (
-                        <div
-                            className={styles.eachSlide}
-                            key={src}
-                        >
-                            <div>
-                                <img src={src} alt={alt} />
-                            </div>
+                    {slidesSrcArray.map(({ src, srcBlur, alt }) => (
+                        <div className={styles.eachSlide}>
+                            <img src={src} alt={alt} className={styles.imageNormalVersion} />
+                            <img src={srcBlur} alt={alt} className={styles.imageBlurVersion} />
                         </div>
                     ))}
                 </Fade>}
