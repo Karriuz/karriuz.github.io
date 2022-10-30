@@ -154,8 +154,8 @@
   }
 }
 
-.slideShowWrapper:hover,
-:focus-within {
+.slideShowWrapper:focus-within,
+.slideShowWrapper:hover {
   .slideInfo {
     opacity: 1;
   }
